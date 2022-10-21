@@ -22,3 +22,10 @@ that executes via the command line on a Linux system, making git-keeper
 adaptable to a wide range of classes and technologies.  In addition, 
 git-keeper requires minimal dependencies and is easy to configure and 
 administer on a local server. 
+
+
+## Contact us
+
+* Nathan Sommer <sommern1@xavier.edu>
+* Ben Coleman <colemanb@moravian.edu>
+
