@@ -1,4 +1,3 @@
-
 ## Git-keeper Student Workflow
 
 The workflow for most git-keeper assignments is:
@@ -14,8 +13,7 @@ The workflow for most git-keeper assignments is:
 ## Example: Homework Average
 
 * If you have not done so already, fill out the form at [www.yellkey.com/pattern](http://www.yellkey.com/pattern) to get added to the sample course.
-* You will receive an email from `gitkeeper@moravian.edu` containing a clone URL and directions for your first assignment.
-
+* You will receive two emails from `gitkeeper@moravian.edu`: one containing account information and another containing a clone URL and directions for your first assignment. Check your spam folder if you do not see these in your inbox. The second email should look like this:
 
   ```
   Clone URL: <username>@ec2-18-205-161-251.compute-1.amazonaws.com:/home/<username>/colemanb/ccsce2022/hw_average.git
@@ -38,7 +36,7 @@ The workflow for most git-keeper assignments is:
   git clone <username>@ec2-18-205-161-251.compute-1.amazonaws.com:/home/<username>/colemanb/ccsce2022/hw_average.git
   ```
   
-* Edit the code with an **incorrect** solution
+* The repository contains a file named `hw_average.py`. Edit this file with an **incorrect** solution
 
   ```
   def compute_hw_average(grades):
