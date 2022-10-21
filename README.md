@@ -16,7 +16,7 @@ to the server, git-keeper automatically tests the submission and sends the
 student an email containing the results.
 
 Faculty interact with the system using a command-line tool to upload 
-assignments to the server and to fetch student submissions for grading.  
+assignments to the server and to fetch student submissions for grading.
 When assessing an assignment, git-keeper can utilize any language or tool 
 that executes via the command line on a Linux system, making git-keeper 
 adaptable to a wide range of classes and technologies.  In addition, 
