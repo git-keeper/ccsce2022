@@ -1,89 +1,15 @@
-## Faculty Client Installation
+## Git-keeper Faculty Workflow
 
-The git-keeper client is a command line application that runs in a Unix-like
-environment. It works natively in macOS and Linux, and in Windows requires the
-Windows Subsystem for Linux (WSL). The client also requires Git and Python 3.8
-or greater.
+As a faculty member, the workflow for a git-keeper assignment is:
 
-You can install the client system-wide using `sudo` using the command below, or
-you can make a virtual environment and install the client there.
+1. Create an assignment folder with the required files.
+2. Upload the assignment to the git-keeper server
+3. Receive an email with a clone URL for a Git repository on the server
+4. Verify that the assignment is set up correctly (and update, if necessary)
+5. Publish the assignment to all students
+6. After the assignment is due, fetch student submissions and reports for grading
 
-```
-sudo python3 -m pip install git-keeper-client
-```
-
-If you are using Ubuntu within WSL, you may not have pip for Python 3. You can
-install it like this:
-
-```
-sudo apt install python3-pip
-```
-
-## Client Configuration
-
-All client commands are run using `gkeep` along with a subcommand. To
-configure the client, run `gkeep config` and follow the prompts. See the
-example output below for the hostname, and use your username on the git-keeper
-server for the username:
-
-```
-gkeep config
-Configuring gkeep
-Server hostname: ec2-18-205-161-251.compute-1.amazonaws.com
-Username: <your username>
-Server SSH port (press enter for port 22): 
-Submissions fetch path (optional, press enter to skip): 
-Assignment templates path (optional, press enter to skip): 
-The following will be written to /home/username/.config/git-keeper/client.cfg: 
-[server]
-host = ec2-18-205-161-251.compute-1.amazonaws.com
-username = <your username>
-
-# optional section
-[local]
-
-Would you like to proceed? (y/n) y
-```
-
-## SSH Keys
-
-All communication with the server is done over SSH. If you have never generated
-SSH keys in your environment, you will need to do so now. Run the following:
-
-```
-ssh-keygen
-```
-
-You can use the default filename, and you do **NOT** want to set a password.
-
-Now you can copy your key to the git-keeper server with `ssh-copy-id`. Use the
-password that you received in an email from git-keeper:
-
-```
-ssh-copy-id <username>@ec2-18-205-161-251.compute-1.amazonaws.com
-```
-
-If everything is set up correctly, `gkeep` should now be able to communication
-with the server. Use `gkeep check` to check this:
-
-```
-gkeep check
-/home/username/.config/git-keeper/client.cfg parsed without errors
-
-Successfully communicated with ec2-18-205-161-251.compute-1.amazonaws.com
-
-Server information:
-  Version: 1.0.1
-  gkeepd uptime: 20h44m33s
-  Firejail installed: True
-  Docker installed: True
-
-Server default assignment settings that can be overridden:
-  env: firejail
-  use_html: True
-  timeout: 10
-  memory_limit 1024
-```
+In this portion of the tutorial, you will create a class and then create and publish an assignment.
 
 ## Creating a Class
 
