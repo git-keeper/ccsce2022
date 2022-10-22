@@ -1,5 +1,5 @@
 
-This is the first programming problem for CCSC-MW 2018.  Your task is to 
+This is the first programming problem for CCSC-E 2022.  Your task is to 
 implement the function compute_hw_average that takes a list of homework 
 scores as its parameter.
 
